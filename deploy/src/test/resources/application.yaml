@@ -1,0 +1,14 @@
+spring:
+  profiles.active: local
+
+---
+spring:
+  profiles: local
+  jpa:
+    show-sql: true
+
+---
+spring:
+  profiles: dev
+  jpa:
+    show-sql: true
