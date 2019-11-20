@@ -1,5 +1,5 @@
 spring:
-  profiles.active: local
+  profiles.active: dev
   jpa:
     hibernate:
       ddl-auto: none
@@ -44,6 +44,9 @@ spring:
     hibernate:
       ddl-auto: create-drop
 
+server:
+  port: 8081
+
 ---
 spring:
   profiles: dev
@@ -68,3 +71,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+server:
+  port: 8082

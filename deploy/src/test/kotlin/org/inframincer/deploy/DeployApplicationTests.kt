@@ -9,18 +9,18 @@ import org.springframework.boot.test.web.client.TestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 class DeployApplicationTests {
 
-	@Autowired
-	private val restTemplate: TestRestTemplate? = null
+    @Autowired
+    private val restTemplate: TestRestTemplate? = null
 
-	@Test
-	fun contextLoads() {
-	}
+    @Test
+    fun contextLoads() {
+    }
 
-	@Test
-	fun `profile`() {
-		val profile = restTemplate?.getForObject("/profile", String::class.java)
-		profile?.let {
-			assertThat(it).isEqualTo("local")
-		}
-	}
+    @Test
+    fun `assert profile`() {
+        val profile = restTemplate?.getForObject("/profile", String::class.java)
+        profile?.let {
+            assertThat(it).isEqualTo("local")
+        }
+    }
 }
