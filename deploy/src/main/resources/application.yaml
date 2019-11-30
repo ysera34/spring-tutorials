@@ -45,7 +45,7 @@ spring:
       ddl-auto: create-drop
 
 server:
-  port: 8081
+  port: 8080
 
 ---
 spring:
@@ -73,4 +73,4 @@ spring:
       ddl-auto: update
 
 server:
-  port: 8082
+  port: 9090
