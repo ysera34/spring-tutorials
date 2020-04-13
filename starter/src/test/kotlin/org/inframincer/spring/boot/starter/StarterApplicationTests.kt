@@ -9,5 +9,4 @@ class StarterApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
