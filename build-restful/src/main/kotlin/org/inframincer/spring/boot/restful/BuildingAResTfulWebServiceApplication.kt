@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class BuildingAResTfulWebServiceApplication
+class BuildingARestfulWebServiceApplication
 
 fun main(args: Array<String>) {
-    runApplication<BuildingAResTfulWebServiceApplication>(*args)
+    runApplication<BuildingARestfulWebServiceApplication>(*args)
 }
